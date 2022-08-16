@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #a1 {
+        background-color: white;
+        color: #409a7f;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 1000;
+      }
+      .line {
+        width: 95%;
+        background-color: #121212;
+        height: 1px;
+        margin-bottom: 10px;
+      }
+      #current {
+        font-weight: bold;
+        color: #121212;
+      }
+      #you {
+        margin-top: 10px;
+      }
+      #birth{
+        display:flex;
+        flex-direction:row;
+        margin-top:20px;
+      }
+      #bday-month{
+        margin-left:10px;
+        margin-top:10px;
+      }
+      #result{
+        padding:10px 10px;
+      width:fit-content;
+        background-color:pink;
+        margin-top:30px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="a1">Age Calculato</div>
+    <div class="line"></div>
+    <div id="current">Calculat to current Date</div>
+    <div id="birth">
+      <div id="you">You Birth Date</div>
+      <input id="bday-month" type="date" value="2022-01-01" />
+    </div>
+    <div id="button"><button onclick="getAge()">Calculate</button>
+    <div id="result">Result</div>
+    
+  </body>
+</html>
